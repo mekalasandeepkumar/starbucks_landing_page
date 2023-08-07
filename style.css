@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+
+body {
+  width: 99%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+.nav {
+  width: 101%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4vw;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+.nav .nav-left {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.nav img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.nav h4 {
+  font-size: 1.1vw;
+  cursor: pointer;
+}
+
+.nav h4:hover {
+  color: #006239;
+}
+.content {
+  width: 100%;
+  height: calc(100% - 100px);
+  display: flex;
+  position: relative;
+}
+.content .left {
+  height: 100%;
+  width: 55%;
+  padding: 5vw 4vw;
+}
+.content .left h1 {
+  font-size: 4.2vw;
+}
+.content .left h1 span {
+  color: #006239;
+  cursor: pointer;
+}
+.content .left p {
+  font-size: 1.2vw;
+  width: 85%;
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+  color: #006239;
+  font-weight: 700;
+}
+.content .left button {
+  background-color: #006341;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2vw;
+  padding: 1.2vw 1.3vw;
+  cursor: pointer;
+}
+.content .left button:hover{
+  background-color: #5c7c3a;
+}
+.content .right{
+  width: 45%;
+  height: 100%;
+}
+
+.content img{
+  width: 65%;
+  height: 100%;
+  object-fit: contain;
+  padding-top: 2vw;
+  cursor: pointer;
+  position: relative;
+  left: 180px;
+}
+
+@media (max-width:600px){
+  .nav{
+    height: 60px;
+    padding: 0vw 6vw;
+  }
+  .nav .nav-left{
+    width: 40px;
+    height: 40px;
+  }
+  .nav h4{
+    font-size: 4vw;
+  }
+  .content {
+    height: calc(100% - 100px);
+    flex-direction: column;
+  }
+  .content .left{
+    width: 100%;
+    height: 45%;
+    padding: 4vw 6vw;
+  }
+  .content .right{
+    width: 100%;
+    height: 55%;
+  }
+  .content .right img{
+    padding-top: 8vw;
+  }
+  .content .left h1{
+    font-size: 9vw;
+  }
+  .content .left p{
+    font-size: 4.5vw;
+    width: 90%;
+    margin-top: 5vw;
+    margin-bottom: 6vw;
+  }
+  .content .left button{
+    padding: 3vw 6vw;
+    font-size: 4vw;
+    border-radius: 30px;
+    font-weight: 700;
+  }
+}
